@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[5.72469, 45.1527], [5.73383, 45.1527], [5.73383, 45.15947], [5.72469, 45.15947], [5.72469, 45.1527]]]}, "properties": {"id": "FranceGrenobleGrandPlace", "update": "0", "country": "France", "town": "Grenoble", "place": "Grand Place"}}]}

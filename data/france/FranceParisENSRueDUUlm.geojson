@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[2.34374, 48.83926], [2.34592, 48.83926], [2.34592, 48.84397], [2.34374, 48.84397], [2.34374, 48.83926]]]}, "properties": {"id": "FranceParisENSRueDUUlm", "update": "0", "country": "France", "town": "Paris", "place": "ENS - Rue d'Ulm"}}]}

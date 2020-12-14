@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[1.44632, 43.60529], [1.447, 43.60529], [1.447, 43.60764], [1.44632, 43.60764], [1.44632, 43.60529]]]}, "properties": {"id": "FranceToulousePlaceVictorHugo", "update": "0", "country": "France", "town": "Toulouse", "place": "Place Victor Hugo"}}]}

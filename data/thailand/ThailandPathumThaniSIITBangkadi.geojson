@@ -1,0 +1,85 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "building": "university",
+                "building:levels": "6",
+                "changeset": "46039306",
+                "id": "ThailandPathumThaniSIITBangkadi",
+                "max_level": "5",
+                "min_level": "0",
+                "timestamp": "2017-02-13T08:11:56Z",
+                "uid": "5310547",
+                "user": "darkhound",
+                "version": "1",
+                "0": "Pathum Thani",
+                "Sirindhorn": "International Institute of Technology",
+                "country": "Thailand",
+                "place": "Sirindhorn International Institute of Technology",
+                "town": "Pathum Thani",
+                "update": "0"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        100.55433610000,
+                        13.98090310000
+                    ],
+                    [
+                        100.55433620000,
+                        13.98082000000
+                    ],
+                    [
+                        100.55435620000,
+                        13.98082010000
+                    ],
+                    [
+                        100.55435640000,
+                        13.98077920000
+                    ],
+                    [
+                        100.55489570000,
+                        13.98078170000
+                    ],
+                    [
+                        100.55489560000,
+                        13.98082240000
+                    ],
+                    [
+                        100.55491500000,
+                        13.98082220000
+                    ],
+                    [
+                        100.55491470000,
+                        13.98090340000
+                    ],
+                    [
+                        100.55489520000,
+                        13.98090330000
+                    ],
+                    [
+                        100.55489450000,
+                        13.98097540000
+                    ],
+                    [
+                        100.55435580000,
+                        13.98097160000
+                    ],
+                    [
+                        100.55435590000,
+                        13.98090330000
+                    ],
+                    [
+                        100.55433610000,
+                        13.98090310000
+                    ]
+                ]
+            }
+        }
+    ]
+}

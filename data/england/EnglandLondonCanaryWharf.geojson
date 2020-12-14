@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-0.0273, 51.496], [-0.0149, 51.496], [-0.0149, 51.50889], [-0.0273, 51.50889], [-0.0273, 51.496]]]}, "properties": {"id": "EnglandLondonCanaryWharf", "update": "0", "country": "England", "town": "London", "place": "Canary Wharf"}}]}

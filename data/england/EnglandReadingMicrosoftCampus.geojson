@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-0.92757, 51.4605], [-0.92387, 51.4605], [-0.92387, 51.46361], [-0.92757, 51.46361], [-0.92757, 51.4605]]]}, "properties": {"id": "EnglandReadingMicrosoftCampus", "update": "0", "country": "England", "town": "Reading", "place": "Microsoft Campus"}}]}

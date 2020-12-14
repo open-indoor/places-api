@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-105.00212, 39.7514], [-104.9995, 39.7514], [-104.9995, 39.75609], [-105.00212, 39.75609], [-105.00212, 39.7514]]]}, "properties": {"id": "UnitedStatesDenverUnionStation", "update": "0", "country": "United States", "town": "Denver", "place": "Denver Union Station"}}]}

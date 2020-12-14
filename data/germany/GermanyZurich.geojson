@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[8.5317, 47.366], [8.5509, 47.366], [8.5509, 47.3766], [8.5317, 47.3766], [8.5317, 47.366]]]}, "properties": {"id": "GermanyZurich", "update": "0", "country": "Germany", "town": "Zurich", "place": "Zurich"}}]}

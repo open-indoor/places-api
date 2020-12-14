@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-84.10992, 9.93529], [-84.10939, 9.93529], [-84.10939, 9.93968], [-84.10992, 9.93968], [-84.10992, 9.93529]]]}, "properties": {"id": "CostaRicaSanJoseStarbucks", "update": "0", "country": "Costa Rica", "town": "San Jos\u00e9", "place": "Starbucks"}}]}

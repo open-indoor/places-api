@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-49.0691, -26.91866], [-49.06802, -26.91866], [-49.06802, -26.91532], [-49.0691, -26.91532], [-49.0691, -26.91866]]]}, "properties": {"id": "BrasilBlumenauBremenCenter", "update": "0", "country": "Brasil", "town": "Blumenau", "place": "Bremen Center"}}]}

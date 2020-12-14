@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[16.37493, 48.18283], [16.37822, 48.18283], [16.37822, 48.18602], [16.37493, 48.18602], [16.37493, 48.18283]]]}, "properties": {"id": "AustriaViennaSudtirolerPlatz", "update": "0", "country": "Austria", "town": "Vienna", "place": "S\u00fcdtiroler Platz"}}]}

@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-1.5377, 47.20364], [-1.53222, 47.20364], [-1.53222, 47.207], [-1.5377, 47.207], [-1.5377, 47.20364]]]}, "properties": {"id": "FranceNantesCentreCommercialBeaulieu", "update": "0", "country": "France", "town": "Nantes", "place": "Centre commercial Beaulieu"}}]}

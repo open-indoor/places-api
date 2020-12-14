@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-79.51926, 8.97255], [-79.51662, 8.97255], [-79.51662, 8.98005], [-79.51926, 8.98005], [-79.51926, 8.97255]]]}, "properties": {"id": "PanamaCityMulticentroMall", "update": "0", "country": "Panama", "town": "Panama City", "place": "Multicentro Mall"}}]}

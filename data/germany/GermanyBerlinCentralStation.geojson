@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[13.36802, 52.52031], [13.37079, 52.52031], [13.37079, 52.52964], [13.36802, 52.52964], [13.36802, 52.52031]]]}, "properties": {"id": "GermanyBerlinCentralStation", "update": "0", "country": "Germany", "town": "Berlin", "place": "Berlin Central Station"}}]}

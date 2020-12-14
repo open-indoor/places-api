@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-43.36717, -23.00077], [-43.36449, -23.00077], [-43.36449, -22.99749], [-43.36717, -22.99749], [-43.36717, -23.00077]]]}, "properties": {"id": "BrasilRioDeJaneiroBarraDaTijuca", "update": "0", "country": "Brasil", "town": "RioDeJaneiro", "place": "BarraDaTijuca"}}]}

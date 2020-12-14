@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[4.85936, 45.75947], [4.86156, 45.75947], [4.86156, 45.76161], [4.85936, 45.76161], [4.85936, 45.75947]]]}, "properties": {"id": "FranceRhoneLyonGareDeLaPartDieu", "update": "0", "country": "France", "town": "Rhone / Lyon", "place": "Gare de la Part-Dieu"}}]}

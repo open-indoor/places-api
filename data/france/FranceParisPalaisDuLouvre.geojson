@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[2.32987, 48.85719], [2.34403, 48.85719], [2.34403, 48.86445], [2.32987, 48.86445], [2.32987, 48.85719]]]}, "properties": {"id": "FranceParisPalaisDuLouvre", "update": "0", "country": "France", "town": "Paris", "place": "Palais du Louvre"}}]}

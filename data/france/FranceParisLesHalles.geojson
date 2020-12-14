@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[2.34161, 48.85778], [2.34883, 48.85778], [2.34883, 48.86625], [2.34161, 48.86625], [2.34161, 48.85778]]]}, "properties": {"id": "FranceParisLesHalles", "update": "1m", "country": "France", "town": "Paris", "place": "Les Halles"}}]}

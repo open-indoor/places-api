@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-0.00981, 51.53881], [-0.004, 51.53881], [-0.004, 51.54463], [-0.00981, 51.54463], [-0.00981, 51.53881]]]}, "properties": {"id": "EnglandStratfordTheStreet", "update": "0", "country": "England", "town": "Stratford", "place": "The Street"}}]}

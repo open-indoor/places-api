@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[2.34292, 48.85359], [2.34635, 48.85359], [2.34635, 48.85773], [2.34292, 48.85773], [2.34292, 48.85359]]]}, "properties": {"id": "FranceParisTGI", "update": "0", "country": "France", "town": "Paris", "place": "TGI"}}]}

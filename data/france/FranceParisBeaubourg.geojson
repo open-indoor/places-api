@@ -1,0 +1,144 @@
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:housenumber": "19",
+                "addr:street": "Rue Beaubourg",
+                "alt_name:en": "Pompidou Centre",
+                "amenity": "arts_centre",
+                "architect": "Richard Rogers",
+                "building": "yes",
+                "building:architecture": "postmodern",
+                "building:levelPlan": "0: Accueil, Information, Billets, Librairie; 2-3: Bibliothèque publique d'information; 4-5: Musée National d'Art Moderne",
+                "building:material": "glass",
+                "changeset": "76515353",
+                "contact:website": "https://www.centrepompidou.fr",
+                "height": "45",
+                "id": "FranceParisBeaubourg",
+                "image": "http://upload.wikimedia.org/wikipedia/commons/c/c5/Pompidou-centre-entrance.jpg",
+                "importance": "international",
+                "loc_name": "Beaubourg;Centre Beaubourg",
+                "max_level": "6",
+                "min_level": "-1",
+                "name": "Centre Georges Pompidou",
+                "name:es": "Centro Pompidou",
+                "name:fr": "Centre Georges Pompidou",
+                "name:it": "Centro Georges Pompidou",
+                "name:ja": "ポンピドゥー・センター",
+                "name:ko": "조르주_퐁피두_센터",
+                "name:no": "Pompidou-senteret",
+                "name:pl": "Centrum Pompidou",
+                "name:ru": "Центр Жоржа Помпиду",
+                "name:zh": "龐畢度中心",
+                "official_name": "Centre National d'Art et de Culture Georges-Pompidou",
+                "phone": "+33 1 44781233",
+                "roof:material": "gravel",
+                "short_name": "Centre Pompidou",
+                "short_name:fr": "CNAC",
+                "source": "Cadastre. Mise à jour : 2010;survey",
+                "start_date": "1977",
+                "timestamp": "2019-11-01T21:54:52Z",
+                "tourism": "attraction",
+                "tourism:visitors": "5300000",
+                "uid": "6935286",
+                "user": "Juan F Holgado",
+                "version": "39",
+                "wheelchair": "yes",
+                "wikidata": "Q178065",
+                "wikipedia": "fr:Centre national d'art et de culture Georges-Pompidou",
+                "country": "France",
+                "place": "Beaubourg",
+                "town": "Paris",
+                "update": "1m"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.35243880000,
+                        48.85970290000
+                    ],
+                    [
+                        2.35304290000,
+                        48.86081900000
+                    ],
+                    [
+                        2.35322190000,
+                        48.86114960000
+                    ],
+                    [
+                        2.35245510000,
+                        48.86132080000
+                    ],
+                    [
+                        2.35239480000,
+                        48.86121690000
+                    ],
+                    [
+                        2.35238410000,
+                        48.86119840000
+                    ],
+                    [
+                        2.35236920000,
+                        48.86117120000
+                    ],
+                    [
+                        2.35234680000,
+                        48.86117740000
+                    ],
+                    [
+                        2.35236170000,
+                        48.86120430000
+                    ],
+                    [
+                        2.35230160000,
+                        48.86121830000
+                    ],
+                    [
+                        2.35224690000,
+                        48.86111590000
+                    ],
+                    [
+                        2.35230370000,
+                        48.86110220000
+                    ],
+                    [
+                        2.35190630000,
+                        48.86036460000
+                    ],
+                    [
+                        2.35184640000,
+                        48.86025340000
+                    ],
+                    [
+                        2.35178410000,
+                        48.86013770000
+                    ],
+                    [
+                        2.35172420000,
+                        48.86002660000
+                    ],
+                    [
+                        2.35163360000,
+                        48.85989330000
+                    ],
+                    [
+                        2.35174740000,
+                        48.85986480000
+                    ],
+                    [
+                        2.35222390000,
+                        48.85975320000
+                    ],
+                    [
+                        2.35243880000,
+                        48.85970290000
+                    ]
+                ]
+            }
+        }
+    ]
+}

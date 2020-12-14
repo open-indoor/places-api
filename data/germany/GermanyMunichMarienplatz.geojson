@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[11.57276, 48.13525], [11.57703, 48.13525], [11.57703, 48.13901], [11.57276, 48.13901], [11.57276, 48.13525]]]}, "properties": {"id": "GermanyMunichMarienplatz", "update": "0", "country": "Germany", "town": "Munich", "place": "Marienplatz"}}]}

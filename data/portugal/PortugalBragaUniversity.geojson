@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-8.3988, 41.5585], [-8.39489, 41.5585], [-8.39489, 41.56278], [-8.3988, 41.56278], [-8.3988, 41.5585]]]}, "properties": {"id": "PortugalBragaUniversity", "update": "1m", "country": "Portugal", "town": "Braga", "place": "University"}}]}

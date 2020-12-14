@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[11.56404, 48.13469], [11.56815, 48.13469], [11.56815, 48.14383], [11.56404, 48.14383], [11.56404, 48.13469]]]}, "properties": {"id": "GermanyMunichKarlsplatzStachus", "update": "0", "country": "Germany", "town": "Munich", "place": "Karlsplatz (Stachus)"}}]}

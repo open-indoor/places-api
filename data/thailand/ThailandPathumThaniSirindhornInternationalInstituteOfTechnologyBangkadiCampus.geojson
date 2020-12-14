@@ -1,0 +1,67 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "building": "university",
+                "building:levels": "6",
+                "changeset": "46359395",
+                "id": "ThailandPathumThaniSirindhornInternationalInstituteOfTechnologyBangkadiCampus",
+                "max_level": "5",
+                "min_level": "0",
+                "timestamp": "2017-02-24T07:38:28Z",
+                "uid": "5310547",
+                "user": "darkhound",
+                "version": "2",
+                "country": "Thailand",
+                "place": "Sirindhorn International Institute of Technology, Bangkadi Campus",
+                "town": "Pathum Thani",
+                "update": "0"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        100.55481720000,
+                        13.98009520000
+                    ],
+                    [
+                        100.55492310000,
+                        13.98009570000
+                    ],
+                    [
+                        100.55492340000,
+                        13.98007480000
+                    ],
+                    [
+                        100.55504640000,
+                        13.98007510000
+                    ],
+                    [
+                        100.55504580000,
+                        13.98049780000
+                    ],
+                    [
+                        100.55492260000,
+                        13.98049820000
+                    ],
+                    [
+                        100.55492300000,
+                        13.98043500000
+                    ],
+                    [
+                        100.55481640000,
+                        13.98043470000
+                    ],
+                    [
+                        100.55481720000,
+                        13.98009520000
+                    ]
+                ]
+            }
+        }
+    ]
+}

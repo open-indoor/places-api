@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[139.77485, 35.70875], [139.77914, 35.70875], [139.77914, 35.71897], [139.77485, 35.71897], [139.77485, 35.70875]]]}, "properties": {"id": "JapanTokyoUenoStation", "update": "0", "country": "Japan", "town": "Tokyo", "place": "Ueno Station"}}]}
