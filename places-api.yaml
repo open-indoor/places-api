@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: places-api
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: places-api
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: places-api-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Mi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: places-api
+  name: places-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: places-api
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        run: places-api
+    spec:
+      containers:
+      - env:
+        - name: API_DOMAIN_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: openindoor-cm
+              key: apiDomainName
+        - name: APP_DOMAIN_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: openindoor-cm
+              key: appDomainName
+        image: openindoor/places-api:0.0.0
+        imagePullPolicy: Always
+        name: places-api
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - mountPath: /data
+            name: places-api-storage
+      volumes:
+      - name: places-api-storage
+        persistentVolumeClaim:
+          claimName: places-api-pvc
