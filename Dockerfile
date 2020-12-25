@@ -35,4 +35,3 @@ COPY ./places-api.sh /places/places-api.sh
 RUN chmod +x /places/places-api.sh
 COPY ./places.py /places/places
 COPY ./data/ /tmp/places/
-RUN touch /tmp/file
