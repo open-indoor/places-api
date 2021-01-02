@@ -208,12 +208,16 @@ elif (action == 'pins'):
                 # https://api-gke.openindoor.io/tileserver/data/argentina.json
                 # urlTileJson = 'http://tileserver-api/tileserver/data/' + country + '.json'
                 # countryTileJson = getData(urlTileJson)
-                country_tile_request = requests.get('http://tileserver-api/tileserver/data/' + country + '.json')
-                countryTileJson = country_tile_request.json()
-                if country_tile_request.status_code >= 400:
+                country_tile_json = None
+                try:
+                    country_tile_request = requests.get('http://tileserver-api/tileserver/data/' + country + '.json')
+                    country_tile_json = country_tile_request.json()
+                except:
                     print('<td>None</td>')
-                else:
-                    inspect = countryTileJson
+                # country_tile_request = requests.get('http://tileserver-api/tileserver/data/' + country + '.json')
+                # countryTileJson = country_tile_request.json()
+                if country_tile_json is not None:
+                    inspect = country_tile_json
                     center = inspect['center']
                     lat = center[0]
                     lon = center[1]
@@ -236,22 +240,33 @@ elif (action == 'pins'):
 
             # GET MBTILES STATUS
             # url = 'http://mbtiles-api/mbtiles/status/' + country + '/' + myId
-            status_request = requests.get('http://mbtiles-api/mbtiles/status/' + country + '/' + myId)
+            status = None
+            try:
+                status_request = requests.get('http://mbtiles-api/mbtiles/status/' + country + '/' + myId)
+                status = status_request.json()['status']
+                # country_tile_request = requests.get('http://tileserver-api/tileserver/data/' + country + '.json')
+                # country_tile_json = country_tile_request.json()
+            except:
+                status = None
+
             # statusJson = getData(url)
-            status = str(None)
             color = "#FF0000"
-            if status_request.status_code < 400:
+            if status is not None:
                 status = status_request.json()['status']
                 if status == "ready":
                     color = "#00FF00"
                 elif status == "in progress":
                     color = "#FF7F00"
-            statusText = '<b style="color:' + color + '";>' + status + '</b>'
+            statusText = '<b style="color:' + color + '";>' + str(status) + '</b>'
 
             # GET OSM CHECKSUM
             # url = 'http://osm-api/osm/' + country + '/' + myId + '.cksum'
             # cksum = str(getData(url))
-            cksum = requests.get('http://osm-api/osm/' + country + '/' + myId + '.cksum').text
+            cksum = None
+            try:
+                cksum = requests.get('http://osm-api/osm/' + country + '/' + myId + '.cksum').text
+            except:
+                cksum = None
 
             print('<tr>')
             print('<td>')
@@ -286,7 +301,7 @@ elif (action == 'pins'):
             print('<a href="' + osmUrl + '">map</a> | ')
             print('<a href="' + editUrl + '">edit</a><br/>')
             print('</td>')
-            print('<td>' + cksum + '</td>')
+            print('<td>' + str(cksum) + '</td>')
 
             # BOUNDS
             print('<td>')
