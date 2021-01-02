@@ -335,7 +335,7 @@ elif (action == 'pins'):
             print('</td>')
 
             # MVT
-            if (countryTileJson == None) or (inspect['generator_options'].find(myId) == -1):
+            if (country_tile_json == None) or (inspect['generator_options'].find(myId) == -1):
                 print('<td>None</td>')
             else:
                 print('<td><a href="/tileserver/data/' + country + '/#20/' + str(lon) + '/' + str(lat) + '">Inspect</a></td>')
