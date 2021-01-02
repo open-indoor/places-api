@@ -208,7 +208,7 @@ elif (action == 'pins'):
                 # https://api-gke.openindoor.io/tileserver/data/argentina.json
                 # urlTileJson = 'http://tileserver-api/tileserver/data/' + country + '.json'
                 # countryTileJson = getData(urlTileJson)
-                country_tile_request = requests('http://tileserver-api/tileserver/data/' + country + '.json')
+                country_tile_request = requests.get('http://tileserver-api/tileserver/data/' + country + '.json')
                 countryTileJson = country_tile_request.json()
                 if country_tile_request.status_code >= 400:
                     print('<td>None</td>')
@@ -236,7 +236,7 @@ elif (action == 'pins'):
 
             # GET MBTILES STATUS
             # url = 'http://mbtiles-api/mbtiles/status/' + country + '/' + myId
-            status_request = requests('http://mbtiles-api/mbtiles/status/' + country + '/' + myId)
+            status_request = requests.get('http://mbtiles-api/mbtiles/status/' + country + '/' + myId)
             # statusJson = getData(url)
             status = str(None)
             color = "#FF0000"
@@ -251,7 +251,7 @@ elif (action == 'pins'):
             # GET OSM CHECKSUM
             # url = 'http://osm-api/osm/' + country + '/' + myId + '.cksum'
             # cksum = str(getData(url))
-            cksum = requests('http://osm-api/osm/' + country + '/' + myId + '.cksum').text
+            cksum = requests.get('http://osm-api/osm/' + country + '/' + myId + '.cksum').text
 
             print('<tr>')
             print('<td>')
