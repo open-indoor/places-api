@@ -30,6 +30,7 @@ from turfpy.measurement import centroid
 import pycurl
 import io
 import html
+import requests
 
 def urlExists(url):
     buffer = BytesIO()
@@ -41,19 +42,19 @@ def urlExists(url):
     crl.close()
     return result
 
-def getData(url):
-    buffer = BytesIO()
-    crl = pycurl.Curl()
-    crl.setopt(crl.URL, url)
-    crl.setopt(crl.WRITEDATA, buffer)
-    crl.perform()
-    code = crl.getinfo(pycurl.HTTP_CODE)
-    crl.close()
-    if code >= 400:
-        result = None
-    else:   
-        result = buffer.getvalue().decode('utf-8')
-    return result
+# def getData(url):
+#     buffer = BytesIO()
+#     crl = pycurl.Curl()
+#     crl.setopt(crl.URL, url)
+#     crl.setopt(crl.WRITEDATA, buffer)
+#     crl.perform()
+#     code = crl.getinfo(pycurl.HTTP_CODE)
+#     crl.close()
+#     if code >= 400:
+#         result = None
+#     else:   
+#         result = buffer.getvalue().decode('utf-8')
+#     return result
 
 addr = os.environ['PATH_INFO'].split('/')
 apiDomainName = os.environ['API_DOMAIN_NAME']
@@ -205,12 +206,14 @@ elif (action == 'pins'):
                 # GET MVT status
                 # TileJSON
                 # https://api-gke.openindoor.io/tileserver/data/argentina.json
-                urlTileJson = 'http://tileserver-api/tileserver/data/' + country + '.json'
-                countryTileJson = getData(urlTileJson)
-                if countryTileJson == None:
+                # urlTileJson = 'http://tileserver-api/tileserver/data/' + country + '.json'
+                # countryTileJson = getData(urlTileJson)
+                country_tile_request = requests('http://tileserver-api/tileserver/data/' + country + '.json')
+                countryTileJson = country_tile_request.json()
+                if country_tile_request.status_code >= 400:
                     print('<td>None</td>')
                 else:
-                    inspect = json.loads(countryTileJson)
+                    inspect = countryTileJson
                     center = inspect['center']
                     lat = center[0]
                     lon = center[1]
@@ -232,12 +235,13 @@ elif (action == 'pins'):
             lon = f['geometry']['coordinates'][1]
 
             # GET MBTILES STATUS
-            url = 'http://mbtiles-api/mbtiles/status/' + country + '/' + myId
-            statusJson = getData(url)
+            # url = 'http://mbtiles-api/mbtiles/status/' + country + '/' + myId
+            status_request = requests('http://mbtiles-api/mbtiles/status/' + country + '/' + myId)
+            # statusJson = getData(url)
             status = str(None)
             color = "#FF0000"
-            if statusJson != None:
-                status = json.loads(statusJson)['status']
+            if status_request.status_code < 400:
+                status = status_request.json()['status']
                 if status == "ready":
                     color = "#00FF00"
                 elif status == "in progress":
@@ -245,8 +249,9 @@ elif (action == 'pins'):
             statusText = '<b style="color:' + color + '";>' + status + '</b>'
 
             # GET OSM CHECKSUM
-            url = 'http://osm-api/osm/' + country + '/' + myId + '.cksum'
-            cksum = str(getData(url))
+            # url = 'http://osm-api/osm/' + country + '/' + myId + '.cksum'
+            # cksum = str(getData(url))
+            cksum = requests('http://osm-api/osm/' + country + '/' + myId + '.cksum').text
 
             print('<tr>')
             print('<td>')
