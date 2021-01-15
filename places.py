@@ -356,7 +356,7 @@ elif (action == 'pins'):
         # print('<td><button onclick=\'navigator.clipboard.writeText("' + html.escape(html.escape(htmlContent)) + '")\'>copy</button></td>')
         # print('<td><button onclick=\'navigator.clipboard.writeText("<table><tr><td><a href=\\\"coucou\\\">coucou</a></td></tr></table>")\'>copy</button></td>')
 
-        print('<td><a href="' + appUrl + '/tileserver/">tileserver</a></td>')
+        print('<td><a href="/tileserver/">tileserver</a></td>')
         print('<td><button onclick=\'navigator.clipboard.writeText("' + htmlContent.replace('"', '\\\"') + '")\'>copy</button></td>')
         # print('<td><button onclick=\'navigator.clipboard.writeText(\\\'&amp;lt;!-- wp:table --&amp;gt;&amp;lt;table class=&amp;\\\')\'>copy</button></td>')
         # print('<td><button onclick=\'navigator.clipboard.writeText(\\\'' + html.escape(html.escape(htmlContent)) + '\\\')\'>copy</button></td>')
