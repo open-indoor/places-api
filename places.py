@@ -271,10 +271,11 @@ elif (action == 'pins'):
             print('<tr>')
             print('<td>')
 
-            link = appUrl + '/index.html?country=' + \
-                str(f['properties']['country']).lower().replace(' ', '_') + '#map=18/' + \
+            link = appUrl + '/landing/' + \
+                str(f['properties']['country']).lower().replace(' ', '_') + '/' + \
                 str(f['geometry']['coordinates'][0]) + '/' + \
-                str(f['geometry']['coordinates'][1]) + '/0/60/0'
+                str(f['geometry']['coordinates'][1]) + '/' + \
+                    '18/0/60/0/0'
             print('<a href="' + link + '">' +
                   f['properties']['country'] + ' - ' + f['properties']['id'] + '</a><br/>')
             print('</td>')
