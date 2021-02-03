@@ -12,6 +12,9 @@ RUN apk add --update-cache \
     net-tools \
     vim \
     util-linux \
+    gdal-tools \
+    postgresql-client \
+    nmap \
     python3 py3-pip geos geos-dev py3-wheel py3-scipy curl-dev gcc musl-dev \
     && rm -rf /var/cache/apk/*
     
