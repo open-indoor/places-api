@@ -8,7 +8,7 @@ export APP_URL=${APP_URL:-https://${APP_DOMAIN_NAME}}
 chmod +x /places/places
 cd /places
 
-cat /etc/caddy/Caddyfile_ | envsubst > /etc/caddy/Caddyfile
+# cat /etc/caddy/Caddyfile_ | envsubst > /etc/caddy/Caddyfile
 cat /etc/caddy/Caddyfile
 
 # Should wait until dat is ready ?

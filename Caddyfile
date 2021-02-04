@@ -19,7 +19,7 @@
                 split "/places/"
                 env SCRIPT_FILENAME /places/places
                 env API places-api
-                env API_DOMAIN_NAME ${API_DOMAIN_NAME}
+                env API_DOMAIN_NAME {$API_DOMAIN_NAME}
             }
         }
     }
