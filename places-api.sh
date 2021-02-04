@@ -6,10 +6,7 @@ export PLACES_API_LOCAL_PORT=${PLACES_API_LOCAL_PORT:-80}
 export APP_URL=${APP_URL:-https://${APP_DOMAIN_NAME}}
 
 chmod +x /places/places
-
-mkdir -p /data/places
-
-cp -r /tmp/places/* /data/places/
+cd /places
 
 cat /etc/caddy/Caddyfile_ | envsubst > /etc/caddy/Caddyfile
 cat /etc/caddy/Caddyfile
@@ -36,7 +33,7 @@ ALTER TABLE places
 ADD CONSTRAINT constraint_name UNIQUE (id);
 EOF
 
-for f in `find /data/places -type f -name "*.geojson"`; do
+for f in `find /tmp/places -type f -name "*.geojson"`; do
     ogr2ogr \
         -f "PostgreSQL" \
         PG:"dbname='openindoor-db' host='"${POSTGRES_DB}"' port='5432' user='"${POSTGRES_USER}"' password='"${POSTGRES_PASSWORD}"'" \
@@ -50,4 +47,11 @@ for f in `find /data/places -type f -name "*.geojson"`; do
         # -lco FID=id \
 done
 
-(caddy run --watch --config /etc/caddy/Caddyfile & fcgiwrap -f -s unix:/var/run/fcgiwrap.socket)
+mkdir -p /data/places
+cp -r /tmp/places/* /data/places/
+
+(\
+  caddy run --watch --config /etc/caddy/Caddyfile\
+  & fcgiwrap -f -s unix:/var/run/fcgiwrap.socket\
+  & env FLASK_APP=places-flask.py flask run\
+)

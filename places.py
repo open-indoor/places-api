@@ -32,6 +32,8 @@ import io
 import html
 import requests
 
+
+
 def urlExists(url):
     buffer = BytesIO()
     crl = pycurl.Curl()
@@ -64,6 +66,7 @@ appUrl = os.environ['APP_URL'] if 'APP_URL' in os.environ else (
 action = addr[0] if (len(addr) > 0) else ""
 country = addr[1] if (len(addr) > 1) else ""
 arg3 = addr[2] if (len(addr) > 2) else ""
+
 myUuid = uuid.uuid1()
 
 PLACES_DIR = '/data/places'

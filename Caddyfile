@@ -24,4 +24,8 @@
         }
     }
 
+    handle /places/add/* {
+    	reverse_proxy http://localhost:5000
+    }
+
 }

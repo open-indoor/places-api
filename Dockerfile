@@ -15,7 +15,7 @@ RUN apk add --update-cache \
     gdal-tools \
     postgresql-client \
     nmap \
-    python3 py3-pip geos geos-dev py3-wheel py3-scipy curl-dev gcc musl-dev \
+    python3 py3-pip py3-flask geos geos-dev py3-wheel py3-scipy curl-dev gcc musl-dev \
     && rm -rf /var/cache/apk/*
     
 COPY ./requirements.txt /places/
