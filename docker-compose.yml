@@ -1,0 +1,27 @@
+version: "3.6"
+services:
+
+  openindoor-db:
+    image: postgis/postgis:12-3.1
+    environment:
+      POSTGRES_DB: openindoor-db
+      POSTGRES_USER: openindoor-db-admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+    - 5432:5432
+
+  openindoor-adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8091:8080
+
+  places-api:
+    build:
+      context: .
+    image: openindoor/places-api
+    environment:
+      POSTGRES_DB: openindoor-db
+      POSTGRES_USER: openindoor-db-admin
+      POSTGRES_PASSWORD: admin123
+      API_DOMAIN_NAME: api-local.openindoor.io
