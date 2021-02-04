@@ -52,6 +52,21 @@ spec:
             configMapKeyRef:
               name: openindoor-cm
               key: appDomainName
+        - name: POSTGRES_DB
+          valueFrom:
+            secretKeyRef:
+              name: openindoor-db-secret
+              key: POSTGRES_DB
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: openindoor-db-secret
+              key: POSTGRES_USER
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: openindoor-db-secret
+              key: POSTGRES_PASSWORD              
         image: openindoor/places-api:0.0.0
         imagePullPolicy: Always
         name: places-api
