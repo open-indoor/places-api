@@ -26,7 +26,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
       jq \
       less \
       net-tools \
-      # npm nodejs \
+      nmap \
       osmium-tool \
       procps \
       unzip \
